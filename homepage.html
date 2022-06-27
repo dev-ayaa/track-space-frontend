@@ -1,0 +1,332 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Track Space</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+
+
+    <style>
+        body{
+            margin: 0;
+        }
+        header {
+            background: fixed;
+            background-color: #353532;
+            /* text-decoration-color: white; */
+            text-align: center;
+            position: fixed;
+            width: 100%;
+        }
+
+        .appname{
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .space{
+            color: #87A162;
+        }
+        .nav-toggle {
+            display: none;
+        }
+
+        .nav-toggle-label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: 1rem;
+            height: 100%;
+            display: flex;
+            /* border: 1px solid green; */
+            align-items: center;
+        }
+        .nav-toggle-label span,
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after{
+            display: block;
+            height: 0.3rem;
+            background: #87A162;
+            width: 2rem;
+            border-radius: 0.2rem;
+            position: relative;
+        }
+
+        .nav-toggle-label span::before,
+        .nav-toggle-label span::after{
+            content: '';
+            position: absolute;
+        }
+        .nav-toggle-label span::before{
+            bottom: 0.5em;
+        }
+        .nav-toggle-label span::after{
+            top: 0.5em;
+        }
+        
+        nav {
+            position: absolute;
+            text-align: left;
+            top: 100%;
+            left: 0;
+            background-color: #353532;
+            width: 100%;
+            display: none;
+            transform: scale(1, 0);
+            transform-origin: top;
+            transition: 400ms ease-in-out 400ms;
+            /* transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out; */
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li{
+            margin-top: 1rem ;
+            margin-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav a{
+            color:#87A162;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            opacity: 0;
+            transition: 150ms ease-in-out ;
+
+        }
+        nav a:hover{
+            color:#ffffff;
+        }
+
+        .nav-toggle:checked ~ nav {
+            display: block;
+            transform: scale(1,1);
+        }
+        .nav-toggle:checked ~nav a{
+            opacity: 1;
+        }
+
+        @media  screen and (min-width :1000px) {
+            .nav-toggle-label{
+                display: none;
+            }
+
+            header{
+                display: grid;
+                grid-template-columns: 1fr  auto minmax(600px, 1fr) 1fr;
+
+            }
+        .appname{
+            grid-column: 1 / 2;
+        }
+        nav{
+            all: unset ;
+            grid-column: 3 / 4;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav a{
+            opacity: 1;
+            position: relative;
+        }
+        nav ul {
+            display: flex;
+            justify-content: flex-end ;
+            margin-top: 15px;
+           /* border: 1px solid #87A162; */
+            }
+        nav li{
+                margin-left: 3rem;
+                margin-bottom: 0;
+            }
+        nav a::before{
+            content: '';
+            height: 3px;
+            display: block;
+            background: #87A162;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -0.3em;
+            transform: scale(0,1);
+            /* transform-origin: */
+            transition: ease-in-out 250ms;
+        }
+
+        nav a:hover::before{
+            transform: scale(1,1);
+        }
+    }
+
+    main{
+        /* display: inline-block; */
+        position:absolute;
+        top: 7.3rem;
+        place-items: center;
+        background-color: #353532;
+        
+    }
+
+    /* main{
+        background-color: #353532;
+    } */
+
+    .first{
+        display: grid;
+        align-content: center;
+        text-align: center;
+        grid-template-columns: 3fr 2fr;
+        margin-left: 3rem;
+        margin-right:3rem;
+        margin-top: 2rem;
+        color: white;
+    }
+    .first div {   
+        text-align: left;
+    }
+    div h1{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .split{
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+        justify-items: center;
+        margin-left: 3rem;
+        padding-left: 3rem;
+        grid-column: 1 / 2; 
+        
+    }
+    .intro{
+        /* margin-top: 5rem; */
+        font-size: 2rem;
+     
+        /* justify-items: left; */
+
+    }
+    span{----
+        color: #87A162;
+        font-style: italic;
+    }
+    /* .btn{
+        align-content: center;
+    } */
+
+    
+    .log-bt{ 
+        /* border-radius: 0.55rem; */
+        font-size: 1.5rem;
+        /* margin-left: 2rem;
+        margin-right: 2rem; */
+    }
+   
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1 class="appname"> track<span class="space"><em>-space</em></span></h1>
+        <input type="checkbox" name="" id="nav-toggle" class="nav-toggle">
+        <nav>
+
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">log-in</a></li>
+                <li><a href="#">options</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+
+    </header>
+
+    <main>
+        <section class="introduction">
+            <div class="first">
+                <div class="split">
+                    <h1><span>Welcome to </span>track<span>-space </span>home to all developer</h1>
+                    <div class="intro"> 
+                        <p>
+                            Get your team a well development ecoystem
+                        for any type of project management as well 
+                        as intensive research on newly innovative 
+                        technology and idea needed to be share or 
+                        contribute to software development as a
+                        whole.
+                        </p>
+                    </div>
+                   
+                    <div class="bt">
+                        <button type="button" class="log-bt btn w-70 btn-lg btn-danger">Sign-up</button>
+                        <button type="button" class="log-bt btn w-70 btn-lg btn-info">login</button>
+                    </div>
+                     
+                </div>
+                <div>
+                    <!-- <img src="static/image/3206155.png" alt="" srcset="" sizes=> -->
+                    <p>workspace for <span>developer, team</span> and <span>client</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="second">
+
+            <div>
+                <div>What we offer our users</div>
+                <div class="offer">
+                    <div>
+                        <img src="static/image/download (1).png" alt="" srcset="">
+                        <p>Project Management</p>
+                    </div>
+                    <div> 
+                        <img src="static/image/download (2).png" alt="" srcset="">
+                        <p>Team Collaboration</p>
+                    </div>
+                    <div>
+                        <img src="static/image/download (3).png" alt="" srcset="">
+                        <p>Proper work integration</p>
+                    </div>
+                    <div>
+                        <img src="static/image/download (4).png" alt="" srcset="">
+                        <p>Good Communication</p>
+                    </div>
+                    <div>
+                        <img src="static/image/download (5).png" alt="" srcset="">
+                        <p>Client Services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html> -->
+
+
+html
