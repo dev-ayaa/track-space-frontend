@@ -1,1 +1,77 @@
- 
+body{
+    background-color: hsl(85, 80%, 25%);
+}
+
+a {
+    color: #ffffff;
+    font-weight: 600;
+}
+#login-form{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.signUp-header{
+    display: grid;
+    justify-items: center;
+}
+
+.signUp-header p{
+    color: hsl(85, 80%, 25%) ;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.grid-container{
+    display: grid;
+    background-color: #ffffff;
+    padding: 3rem 3rem;
+}
+
+.terms{
+    text-align: left;
+}
+.terms p{
+    color:hsl(85, 80%, 25%) ;
+    font-style: italic;
+}
+
+.signup-bt{
+    display: grid;
+    justify-items: center
+}
+
+.alt{
+    text-align: center;
+    color: hsl(85, 80%, 25%);
+    font-style: italic;
+    font-weight: bold;
+}
+.bt{
+    /* background-color: hsl(85, 100%, 83%); */
+    background-color: hsl(85, 80%, 25%);
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    justify-items: center;
+}
+
+.alt-login{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 1rem;
+}
+
+.bt-link{
+    text-decoration: none;
+    justify-items: center;
+}
+
+.ft p{
+    color: hsl(85, 80%, 25%);
+    text-align: left;
+    font-style: italic;
+}
+
+
