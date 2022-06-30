@@ -1,9 +1,18 @@
 body{
-    background-color: hsl(85, 80%, 25%);
+    /* background-color: hsl(85, 80%, 25%); */
+    background-color: #87A162;
 }
 
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-family: cursive;
+    color: #364420;
+    /* font-size: x-large;  #364420;*/
+}
 a {
-    color: #ffffff;
+    color: hsl(84, 49%, 16%);
     font-weight: 600;
 }
 #login-form{
@@ -19,13 +28,16 @@ a {
 }
 
 .signUp-header p{
-    color: hsl(85, 80%, 25%) ;
+    /* color: hsl(85, 80%, 25%) ; */
+    /* color: hsl(84, 49%, 16%); */
+    /* color: #353532; */
+    color: #364420;
     font-weight: bold;
     font-size: 1.5rem;
 }
 .grid-container{
     display: grid;
-    background-color: #ffffff;
+    background-color:  #ffffff;
     padding: 3rem 3rem;
 }
 
@@ -33,28 +45,66 @@ a {
     text-align: left;
 }
 .terms p{
-    color:hsl(85, 80%, 25%) ;
-    font-style: italic;
+    /* color:hsl(84, 49%, 16%) ; */
+    /* color: #6e6f69; */
+    /* color: #4f5244; */
+    color: #364420;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.terms span{
+    /* color:hsl(85, 66%, 57%) */
+    /* color: #353532; */
+    /* color: #6e6f69; */
+    color: #87A162;
+
 }
 
 .signup-bt{
     display: grid;
-    justify-items: center
+    justify-items: center;
+    /* color: hsl(85, 19%, 45%); */
+}
+.sign-up{
+    /* background-color: hsl(85, 19%, 45%); */
+    background-color:  hsl(85, 24%, 44%);
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    justify-items: center;
+    /* border-color: hsl(85, 80%, 25%); */
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom-width: 2px;
+    border-color: grey;
+    border-bottom-style: double;
 }
 
 .alt{
     text-align: center;
-    color: hsl(85, 80%, 25%);
+    /* color: hsl(85, 80%, 25%); */
+    /* color: #353532; */
+    color: #364420;
     font-style: italic;
     font-weight: bold;
 }
 .bt{
     /* background-color: hsl(85, 100%, 83%); */
-    background-color: hsl(85, 80%, 25%);
+    /* background-color: hsl(85, 80%, 25%); */
+    background-color: #87A162;
     margin-bottom: 10px;
     color: #ffffff;
     font-weight: bold;
     justify-items: center;
+    /* border-color: hsl(85, 80%, 25%); */
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom-width: 2px;
+    border-color: grey;
+    border-bottom-style: double;
 }
 
 .alt-login{
@@ -68,10 +118,17 @@ a {
     justify-items: center;
 }
 
+.ft{
+    text-decoration: none;
+}
+
 .ft p{
-    color: hsl(85, 80%, 25%);
+    /* color: hsl(85, 80%, 25%); */
+    /* color: hsl(84, 49%, 16%); */
+    color: #87A162;
     text-align: left;
     font-style: italic;
+    text-decoration: none;
 }
 
 
