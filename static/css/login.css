@@ -1,33 +1,34 @@
-body{
+body {
     /* background-color: hsl(85, 80%, 25%); */
     background-color: #87A162;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bolder;
-    font-family: cursive;
     color: #364420;
     /* font-size: x-large;  #364420;*/
 }
+
 a {
     color: hsl(84, 49%, 16%);
     font-weight: 600;
 }
-#login-form{
+
+#login-form {
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
 
-.signUp-header{
+.signUp-header {
     display: grid;
     justify-items: center;
 }
 
-.signUp-header p{
+.signUp-header p {
     /* color: hsl(85, 80%, 25%) ; */
     /* color: hsl(84, 49%, 16%); */
     /* color: #353532; */
@@ -35,16 +36,18 @@ a {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     padding: 3rem 3rem;
 }
 
-.terms{
+.terms {
     text-align: left;
 }
-.terms p{
+
+.terms p {
     /* color:hsl(84, 49%, 16%) ; */
     /* color: #6e6f69; */
     /* color: #4f5244; */
@@ -53,7 +56,7 @@ a {
     font-weight: 600;
 }
 
-.terms span{
+.terms span {
     /* color:hsl(85, 66%, 57%) */
     /* color: #353532; */
     /* color: #6e6f69; */
@@ -61,14 +64,15 @@ a {
 
 }
 
-.signup-bt{
+.signup-bt {
     display: grid;
     justify-items: center;
     /* color: hsl(85, 19%, 45%); */
 }
-.sign-up{
+
+.sign-up {
     /* background-color: hsl(85, 19%, 45%); */
-    background-color:  hsl(85, 24%, 44%);
+    background-color: hsl(85, 24%, 44%);
     margin-bottom: 10px;
     color: #ffffff;
     font-weight: bold;
@@ -82,7 +86,7 @@ a {
     border-bottom-style: double;
 }
 
-.alt{
+.alt {
     text-align: center;
     /* color: hsl(85, 80%, 25%); */
     /* color: #353532; */
@@ -90,7 +94,8 @@ a {
     font-style: italic;
     font-weight: bold;
 }
-.bt{
+
+.bt {
     /* background-color: hsl(85, 100%, 83%); */
     /* background-color: hsl(85, 80%, 25%); */
     background-color: #87A162;
@@ -107,22 +112,22 @@ a {
     border-bottom-style: double;
 }
 
-.alt-login{
+.alt-login {
     display: grid;
     justify-items: center;
     margin-bottom: 1rem;
 }
 
-.bt-link{
+.bt-link {
     text-decoration: none;
     justify-items: center;
 }
 
-.ft{
+.ft {
     text-decoration: none;
 }
 
-.ft p{
+.ft p {
     /* color: hsl(85, 80%, 25%); */
     /* color: hsl(84, 49%, 16%); */
     color: #87A162;
@@ -130,5 +135,3 @@ a {
     font-style: italic;
     text-decoration: none;
 }
-
-
