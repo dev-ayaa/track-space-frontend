@@ -1,11 +1,9 @@
-/* #33465f
-#c6c9ce
-#1D2021
-#566277 */
-body{
+
+body {
     background-color: #c6c9ce;
 }
-.form-container{
+
+.form-container {
     background-color: #33465f;
     border-radius: 10px;
     padding-left: 1rem;
@@ -18,7 +16,7 @@ body{
     text-decoration: none;
 }
 
-::placeholder{
+::placeholder {
     color: #33465f;
     opacity: 1;
 }
@@ -28,14 +26,15 @@ body{
     margin-bottom: 0;
     text-align: center;
 }
-h1{
+
+h1 {
     font-weight: normal;
     text-align: center;
     color: #33465f;
     font-size: 2.0rem;
 }
 
-.user-info{
+.user-info {
     font-weight: Lighter;
     font-size: 1.5rem;
     text-align: left;
@@ -44,34 +43,37 @@ h1{
 }
 
 
-.box{
+.box {
     color: #1D2021;
     font-style: italic;
     font-weight: lighter;
 }
 
-.btn-back{
+.btn-back {
     background-color: #1D2021;
 
 }
-.btn-back a{
-    color:#c6c9ce;;
+
+.btn-back a {
+    color: #c6c9ce;;
 }
 
-.btn-reset{
-    background-color: greenyellow ;
+.btn-reset {
+    background-color: greenyellow;
 }
-.btn-reset a{
+
+.btn-reset a {
     color: #1D2021;
 }
 
-.btn-submit{
+.btn-submit {
     background-color: #d9d1d1;
 }
 
-.btn-submit a{
-    color:#33465f;
+.btn-submit a {
+    color: #33465f;
 }
-.cp{
+
+.cp {
     color: #ffffff;
 }
